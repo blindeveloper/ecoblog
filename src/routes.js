@@ -1,21 +1,10 @@
-import TestPage from './modules/pages/TestPage.jsx'
-import SwimmersPage from './modules/pages/SwimmersPage.jsx'
+import BlogPage from './modules/pages/BlogPage.jsx'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    exact: true
-  },
-  {
-    path: '/test',
-    name: 'test',
-    component: TestPage
-  },
-  {
-    path: '/swimmers',
-    name: 'swimmers',
-    component: SwimmersPage
+    name: 'blog',
+    component: BlogPage
   }
 ]
 

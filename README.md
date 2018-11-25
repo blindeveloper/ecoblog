@@ -1,6 +1,3 @@
-What is under the hood?
-- react
-- babel
-- webpack
-- jest
-- sass
+- first run: `npm run build` and live it in terminal listen to changes
+- then in separate terminal run: `npm run serve`, it will run server
+- next go to http://localhost:8000/

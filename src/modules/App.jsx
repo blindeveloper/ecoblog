@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Navigation from './navigation/Navigation.jsx'
 import routes from '../routes'
 import { Layout, Row, Col } from 'antd'
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout
 import '../index.scss'
 
 const App = () => (
