@@ -16,6 +16,7 @@ class ArticleList extends React.Component {
       {this.props.listOfArticles.map((article, i) => {
         return <Card
           style={{marginTop:'20px'}}
+          cover={<img alt="example" src={article.imageUrl}/>}
           key={i}
           type="inner"
           title={article.name}

@@ -1,4 +1,4 @@
-import BlogPage from './modules/pages/BlogPage.jsx'
+import BlogPage from './modules/pages/blogPage.container'
 
 const routes = [
   {
