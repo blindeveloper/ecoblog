@@ -1,7 +1,9 @@
 const articlesReducer = (state = [], action) => {
   switch (action.type) {
-  case 'ADD_LIST_OF_ARTICLES':
-    return action.list
+  case 'ADD_FULL_ARTICLE':
+    return [action.fullArticle]
+  case 'CLEAR_FULL_ARTICLE':
+    return ''
   default:
     return state
   }

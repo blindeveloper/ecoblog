@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { addListOfArticlesAction } from '../actions/articlesList.actions'
+import { addListOfArticlesAction, addFullArticleAction } from '../actions/articlesList.actions'
 import articleList from '../components/articleList.component.jsx'
 
 const mapStateToProps = state => ({
@@ -7,7 +7,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  addListOfArticles: (list) => dispatch(addListOfArticlesAction(list))
+  addListOfArticles: list => dispatch(addListOfArticlesAction(list)),
+  addFullArticle: article => dispatch(addFullArticleAction(article))
 })
 
 export default connect(
