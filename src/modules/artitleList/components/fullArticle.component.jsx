@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 const FullArticle = ({fullArticle, clearFullArticle}) => (
   <Card
+    style={{marginTop: '20px'}}
     type="inner"
     title={fullArticle.name}
     extra={new Date(fullArticle.creationDate).toLocaleDateString()}>

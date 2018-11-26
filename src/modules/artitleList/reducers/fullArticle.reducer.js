@@ -3,7 +3,7 @@ const articlesReducer = (state = [], action) => {
   case 'ADD_FULL_ARTICLE':
     return [action.fullArticle]
   case 'CLEAR_FULL_ARTICLE':
-    return ''
+    return []
   default:
     return state
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, List, Button } from 'antd'
+import { Card, Button } from 'antd'
 import { GET } from '../resource/article.resource'
 import PropTypes from 'prop-types'
 class ArticleList extends React.Component {
@@ -13,21 +13,17 @@ class ArticleList extends React.Component {
   
   render(){
     return <section>
-      <List
-        header={<div>Articles</div>}
-        bordered
-        dataSource={this.props.listOfArticles}
-        renderItem={article => (
-          <List.Item>
-            <Card
-              type="inner"
-              title={article.name}
-              extra={new Date(article.creationDate).toLocaleDateString()}>
-              <p>{article.shortText}</p>
-              <Button type="dashed" onClick={() => this.readMore(article.id)}>Read more</Button>
-            </Card>
-          </List.Item>
-        )}/>
+      {this.props.listOfArticles.map((article, i) => {
+        return <Card
+          style={{marginTop:'20px'}}
+          key={i}
+          type="inner"
+          title={article.name}
+          extra={new Date(article.creationDate).toLocaleDateString()}>
+          <p>{article.shortText}</p>
+          <Button type="dashed" onClick={() => this.readMore(article.id)}>Read more</Button>
+        </Card>
+      })}
     </section>
   }
 }
